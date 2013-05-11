@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- Created from PDF via Acrobat SaveAsXML --><!-- Mapping Table version: 28-February-2003 --><TaggedPDF-doc><?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/09/27-13:37:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>xml</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Tomasz Krzyzak</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Datasheet</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">DFPCOMP - Floating Point Comparator</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2012-01-23T15:07:53+01:00</xmp:CreateDate>
+         <xmp:CreatorTool>Microsoft® Word 2010</xmp:CreatorTool>
+         <xmp:ModifyDate>2012-01-23T15:07:53+01:00</xmp:ModifyDate>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Microsoft® Word 2010</pdf:Producer>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?><?xpacket end='r'?><Part><H1><Figure ActualText="D"><ImageData src="images/fpu_ip_dcd_compare_only_img_0.jpg"/>DD</Figure><Figure ActualText="F"><ImageData src="images/fpu_ip_dcd_compare_only_img_1.jpg"/>FF</Figure><Figure ActualText="P"><ImageData src="images/fpu_ip_dcd_compare_only_img_2.jpg"/>PP</Figure><Figure ActualText="C"><ImageData src="images/fpu_ip_dcd_compare_only_img_3.jpg"/>CC</Figure><Figure ActualText="O"><ImageData src="images/fpu_ip_dcd_compare_only_img_4.jpg"/>OO</Figure><Figure ActualText="M"><ImageData src="images/fpu_ip_dcd_compare_only_img_5.jpg"/>MM</Figure><Figure ActualText="P "><ImageData src="images/fpu_ip_dcd_compare_only_img_6.jpg"/>PP</Figure></H1><P>Floating Point Comparator Unit </P><Sect><H2>v. 2.10 </H2><Sect><H3>OVERVIEW </H3><P>The DFPCOMP compares two arguments. The input numbers format conforms to IEEE-754 standard. DFPCOMP supports single precision real numbers. Compare operation was pipelined up to 1 level. Input data are fed every clock cycle. The first result appears after 1 clock period latency and next results are available each clock cycle. Full IEEE-754 unordered compare function is included. </P></Sect><Sect><H3>APPLICATION </H3><L><LI><LI_Label>● </LI_Label><LI_Title>Math coprocessors </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>DSP algorithms </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Embedded arithmetic coprocessor </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Data processing &amp; control </LI_Title></LI></L></Sect><Sect><H3>KEY FEATURES </H3><L><LI><LI_Label>● </LI_Label><LI_Title>Full IEEE-754 compliance </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Single precision real format support </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Simple interface </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>No programming required </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>1 level pipeline </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Results available at every clock </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Fully configurable </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Fully synthesizable, static synchronous design with no internal tri-states </LI_Title></LI></L></Sect><Sect><H3>DELIVERABLES </H3><L><L><LI><LI_Label>♦ </LI_Label><LI_Title>Source code: </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>VHDL Source Code or/and </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>VERILOG Source Code or/and </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Encrypted, or plain text EDIF netlist </LI_Title></LI></L></L><L><LI><LI_Label>♦ </LI_Label><LI_Title>VHDL &amp; VERILOG test bench environment </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>Active-HDL automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>NCSim automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>ModelSim automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Tests with reference responses </LI_Title></LI></L></L><L><LI><LI_Label>● </LI_Label><LI_Title>Technical documentation </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>Installation notes </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>HDL core specification </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Datasheet </LI_Title></LI></L></L><LI><LI_Label>♦ </LI_Label><LI_Title>Synthesis scripts </LI_Title></LI><LI><LI_Label>♦ </LI_Label><LI_Title>Example application </LI_Title></LI><L><LI><LI_Label>♦ </LI_Label><LI_Title>Technical support </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>IP Core implementation support </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>3 months maintenance </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>Delivery the IP Core updates, minor and major versions changes </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Delivery the documentation updates </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Phone &amp; email support </LI_Title></LI></L></L></L></L></L></Sect><Sect><H3>LICENSING </H3><P>Comprehensible and clearly defined licensing methods, without royalty-per-chip fees, make using of IP Core easy and simple. </P><P>Single Site license option – it is dedicated for small and middle sized companies, running their business at one location. </P><P>Multi Sites license option – it is dedicated for corporate customers, running their business at several places. Licensed product can be used in selected company branches. In all cases, number of IP Core instantiation within a project and num-</P><Figure><ImageData src="images/fpu_ip_dcd_compare_only_img_7.jpg"/></Figure><P>Copyright© 1999-2012 DCD – Digital Core Design. All Rights Reserved 
+All trademarks mentioned in this document are trademarks of their respective owners. 
+</P><Figure><ImageData src="images/fpu_ip_dcd_compare_only_img_8.jpg"/>Copyright© 1999-2012 DCD – Digital Core Design. All Rights Reserved All trademarks mentioned in this document are trademarks of their respective owners. ber of manufactured chips are unlimited. The li-cense is royalty-per-chip free. There is no re-strictions regarding the time of use. There are two formats of delivered IP Core ●VHDL, Verilog RTL synthesizable source code called HDL Source ●FPGA EDIF/NGO/NGD/QXP/VQM called Netlist S Y M B O L P I N S D E S C R I P T I O N PIN TYPE DESCRIPTION clk Input Global system clock rst Input Global system reset en Input Enable computing adatai[31:0] Input A data bus input bdatai[31:0] Input B data bus input gto output A&gt;B output eqo output A=B output lto output A&lt;B output ifo output Invalid result flag B L O C K D I A G R A M Arguments Checker -performs input data analysis against IEEE-754 number standard compliance. The appropriate numbers and information about the input data classes, are given as the results to Main FP Pipelined Unit. Main FP Pipelined Unit -performs floating point compare function. Gives the complex information about the results and makes final flags settings. </Figure></Sect><Sect><H3>CONTACT </H3><P>For any modification or special request, please contact Digital Core Design or local distributors. </P><Sect><H4>Headquarters: </H4><P>Wroclawska 94 
+41-902 Bytom, POLAND 
+e-mail: : <Link>info@dcd.pl 
+</Link>tel. : +48 32 282 82 66 
+fax : +48 32 282 74 37 
+</P><P>Distributors: </P><P>Please check: http://dcd.pl/sales/ </P><Figure><ImageData src="images/fpu_ip_dcd_compare_only_img_9.jpg"/></Figure><P>Copyright© 1999-2012 DCD – Digital Core Design. All Rights Reserved 
+All trademarks mentioned in this document are trademarks of their respective owners. 
+</P></Sect></Sect></Sect></Part></TaggedPDF-doc>

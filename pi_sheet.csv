@@ -1,0 +1,64 @@
+Word,PI Score,Tf-Idf,Loc Ind,Loc Sig,Section
+prospective,0.445909868828,0.010324017407626139,0 0 0 23,query body statement word,NA
+named,0.0880784717961,0.002113377881132026,0 0 5 11,query body statement word,NA
+chariot,0.556420368866,0.00949792179927602,0 0 5 10,query body statement word,NA
+help,0.261729582388,0.0025085832971998433,0 0 4 22,query body statement word,NA
+people,-0.0604075773062,0.0010411561384024994,0 0 1 14,query body statement word,NA
+appeared,0.162581951585,0.003281533740840666,0 0 3 5,query body statement word,NA
+relieve,0.499217300713,0.007815434110426296,0 0 1 8,query body statement word,NA
+Rukmini,0.670017352505,0.007815434110426296,0 0 0 25,query body statement word,NA
+traverse,0.679439663721,0.011791444566423483,0 0 4 7,query body statement word,NA
+Shishupala,0.691468801566,0.008475277827489835,0 0 0 5,query body statement word,NA
+mortals,0.445909868828,0.010324017407626139,0 0 4 33,query body statement word,NA
+year,0.4639349802,0.006774277972023796,0 0 3 3,query body statement word,NA
+carry,0.401844509676,0.005017166594399687,0 0 2 1,query body statement word,NA
+earth,0.282335500648,0.002798267516026609,0 0 1 10,query body statement word,NA
+worship,0.437890414115,0.005966694530289993,0 0 2 8,query body statement word,NA
+living,0.218922651639,0.004499267371492649,0 0 2 10,query body statement word,NA
+Maya,0.716680709048,0.00928286126922364,0 0 5 6,query body statement word,NA
+Salva.,0.793437204277,0.011791444566423483,0 0 5 17,query body statement word,NA
+began,0.152521937692,0.0031131721901049413,0 0 2 6,query body statement word,NA
+Yadus,0.651880410751,0.007257544196837853,0 0 0 13,query body statement word,NA
+also,-0.125512798857,0.0006877907337934384,0 0 4 21,query body statement word,NA
+reptiles,0.445909868828,0.010324017407626139,0 0 4 35,query body statement word,NA
+boon,0.41362442787,0.005306850813226452,0 0 3 11,query body statement word,NA
+denied,0.308136615064,0.007257544196837853,0 0 0 18,query body statement word,NA
+terror,0.521936474582,0.008475277827489835,0 0 4 13,query body statement word,NA
+destroy,0.549221223989,0.00928286126922364,0 0 1 4,query body statement word,NA
+friend,0.76005276593,0.013548555944047592,0 0 0 3,query body statement word,NA
+gave,0.100370329211,0.002240377602438166,0 0 5 14,query body statement word,NA
+Krishna,0.3,0.0014327941607043628,0 0 0 15,query body statement word,NA
+Yadavas,0.83270267303,0.014515088393675706,0 0 4 19,query body statement word,NA
+offer,0.362363988484,0.00404628685213771,0 0 3 8,query body statement word,NA
+Shiva,0.750077087978,0.01037433369927045,0 0 3 4,query body statement word,NA
+handful,0.549221223989,0.00928286126922364,0 0 2 13,query body statement word,NA
+Salva,1.0,0.030972052222878417,0 0 2 5,query body statement word,NA
+Soubha,0.793437204277,0.011791444566423483,0 0 5 12,query body statement word,NA
+strike,0.549221223989,0.00928286126922364,0 0 4 12,query body statement word,NA
+asura,0.568198716375,0.005017166594399687,0 0 5 4,query body statement word,NA
+nearly,0.565442123165,0.011791444566423483,0 0 3 1,query body statement word,NA
+dust,0.308136615064,0.007257544196837853,0 0 2 15,query body statement word,NA
+succumbing,0.445909868828,0.010324017407626139,0 0 4 25,query body statement word,NA
+vowed,0.38176173893,0.00928286126922364,0 0 1 2,query body statement word,NA
+entire,0.293291900816,0.0029522958968100517,0 0 4 9,query body statement word,NA
+resolve,0.549221223989,0.00928286126922364,0 0 2 4,query body statement word,NA
+Ordered,0.679439663721,0.011791444566423483,0 0 5 0,query body statement word,NA
+especially,0.445909868828,0.010324017407626139,0 0 0 14,query body statement word,NA
+celestials,0.291700483218,0.006774277972023796,0 0 4 31,query body statement word,NA
+attacks,0.445909868828,0.010324017407626139,0 0 4 28,query body statement word,NA
+universe,0.4639349802,0.006774277972023796,0 0 4 10,query body statement word,NA
+could,-0.0604075773062,0.0010411561384024994,0 0 4 6,query body statement word,NA
+created,0.244757332011,0.005306850813226452,0 0 5 7,query body statement word,NA
+bride,0.597223700855,0.010324017407626139,0 0 0 24,query body statement word,NA
+architect,0.549221223989,0.00928286126922364,0 0 5 5,query body statement word,NA
+undesirable,0.38176173893,0.00928286126922364,0 0 1 13,query body statement word,NA
+iron,0.499217300713,0.007815434110426296,0 0 5 9,query body statement word,NA
+hearts,0.254831166097,0.005621755487304784,0 0 4 16,query body statement word,NA
+hatred,0.244757332011,0.005306850813226452,0 0 0 10,query body statement word,NA
+asked,0.133705614237,0.002798267516026609,0 0 4 1,query body statement word,NA
+unhindered,0.445909868828,0.010324017407626139,0 0 4 11,query body statement word,NA
+Shiva living,1.0,0.011890532335889227,0 0 2 9 | 0 0 2 10,query body statement word,NA
+"universe unhindered,",1.0,0.011890532335889227,0 0 4 10 | 0 0 4 11,query body statement word,NA
+entire universe,1.0,0.011890532335889227,0 0 4 9 | 0 0 4 10,query body statement word,NA
+asura architect,1.0,0.011890532335889227,0 0 5 4 | 0 0 5 5,query body statement word,NA
+strike terror,1.0,0.011890532335889227,0 0 4 12 | 0 0 4 13,query body statement word,NA

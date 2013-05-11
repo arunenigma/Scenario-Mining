@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- Created from PDF via Acrobat SaveAsXML --><!-- Mapping Table version: 28-February-2003 --><TaggedPDF-doc><?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/09/27-13:37:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>xml</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Tomasz Krzyzak</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Datasheet</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">DINT2FP - Integer Converter</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2012-02-09T15:25:08+01:00</xmp:CreateDate>
+         <xmp:CreatorTool>Microsoft® Word 2010</xmp:CreatorTool>
+         <xmp:ModifyDate>2012-02-09T15:25:08+01:00</xmp:ModifyDate>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Microsoft® Word 2010</pdf:Producer>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?><?xpacket end='r'?><Part><H1><Figure ActualText="D"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_0.jpg"/>DD</Figure><Figure ActualText="I"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_1.jpg"/>II</Figure><Figure ActualText="N"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_2.jpg"/>NN</Figure><Figure ActualText="T"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_3.jpg"/>TT</Figure><Figure ActualText="2"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_4.jpg"/>22</Figure><Figure ActualText="F"><ImageData src="images/fpu_ip_dcd_converter_int2float_img_5.jpg"/>FF</Figure><Figure ActualText="P "><ImageData src="images/fpu_ip_dcd_converter_int2float_img_6.jpg"/>PP</Figure></H1><P>Integer to Floating Point Pipelined Converter </P><Sect><H3>v. 2.32 </H3><Sect><Sect><H3>OVERVIEW </H3><P>The DINT2FP is a pipelined integer to floating point converter. The input and output numbers format is compliant with IEEE-754 standard. DINT2FP supports double word integers (4 Bytes) and single precision real numbers. Convert operation is pipe-lined to 3 levels. Input data are fed every clock cycle. The first result appears after latency equal to 3 clock periods and next results are available each clock cycle. Full precision and accuracy are accomplished. </P></Sect><Sect><H3>APPLICATION </H3><L><LI><LI_Label>● 	</LI_Label><LI_Title>Math coprocessors </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>DSP algorithms </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Embedded arithmetic coprocessor </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Data processing &amp; control </LI_Title></LI></L></Sect><Sect><H3>KEY FEATURES </H3><L><LI><LI_Label>● 	</LI_Label><LI_Title>Full IEEE-754 compliance </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Double word integer input numbers (4 Bytes) </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Single precision real output numbers </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Simple interface </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>No programming required </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>3 levels pipelining </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Full accuracy and precision </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Results available at every clock </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Fully configurable </LI_Title></LI><LI><LI_Label>● </LI_Label><LI_Title>Fully synthesizable, static synchronous design with no internal tri-states </LI_Title></LI></L></Sect><Sect><H3>DELIVERABLES </H3><L><L><LI><LI_Label>♦ 	</LI_Label><LI_Title>Source code: </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>VHDL Source Code or/and </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>VERILOG Source Code or/and </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>FPGA netlist </LI_Title></LI></L></L><LI><LI_Label>♦ 	</LI_Label><LI_Title>VHDL &amp; VERILOG test bench environment </LI_Title></LI></L><L><LI><LI_Label>● 	</LI_Label><LI_Title>Active-HDL automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>ModelSim automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>NCSim automatic simulation macros </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Tests with reference responses </LI_Title></LI></L><L><L><LI><LI_Label>♦ 	</LI_Label><LI_Title>Technical documentation </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>Installation notes </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>HDL core specification </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Datasheet </LI_Title></LI></L></L><LI><LI_Label>♦ 	</LI_Label><LI_Title>Synthesis scripts </LI_Title></LI><LI><LI_Label>♦ 	</LI_Label><LI_Title>Example application </LI_Title></LI><L><LI><LI_Label>♦ 	</LI_Label><LI_Title>Technical support </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>IP Core implementation support </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>3 months maintenance </LI_Title></LI><L><LI><LI_Label>● 	</LI_Label><LI_Title>Delivery the IP Core updates, minor and major versions changes </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Delivery the documentation updates </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>Phone &amp; email support </LI_Title></LI></L></L></L></L></L></Sect></Sect><Sect><Sect><H3>LICENSING </H3><P>Comprehensible and clearly defined licensing methods, without royalty-per-chip fees, make using of IP Core easy and simple. </P><P>Single Site license option – it is dedicated for small and middle sized companies, running their business at one location. </P><P>Multi Sites license option – it is dedicated for corporate customers, running their business at several places. Licensed product can be used in selected company branches. In all cases, number of IP Core instantiation within a project and number of manufactured chips are unlimited. The license is royalty-per-chip free. There is no restrictions regarding the time of use. </P><P>There are two formats of delivered IP Core </P><L><LI><LI_Label>● 	</LI_Label><LI_Title>VHDL, Verilog RTL synthesizable source code called HDL Source </LI_Title></LI><LI><LI_Label>● 	</LI_Label><LI_Title>FPGA EDIF/NGO/NGD/QXP/VQM called Netlist </LI_Title></LI></L></Sect><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_7.jpg"/></Figure><P>Copyright© 1999-2011 DCD – Digital Core Design. All Rights Reserved 
+All trademarks mentioned in this document are trademarks of their respective owners 
+</P></Sect><Sect><Sect><H3>SYMBOL 
+</H3></Sect><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_8.jpg"/>datai(31:0)datao(31:0)enrstclk</Figure></Sect><Sect><Sect><H3>PERFORMANCE </H3><P>The following table gives a survey about the Core </P><P>area and performance in the XILINX® devices after </P><P>Place &amp; Route : </P><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_9.jpg"/>Device Speed grade Slices Fmax </Figure><P>SPARTAN-II </P><P>-6 </P><P>190 </P><P>58 MHz </P><P>SPARTAN-IIE </P><P>-7 </P><P>189 </P><P>69 MHz </P></Sect></Sect><Sect><Sect><H3>PINS DESCRIPTION </H3></Sect><P><Table><TR><TH>PIN </TH><TH>TYPE </TH><TH>DESCRIPTION </TH></TR><TR><TD>clk </TD><TD>Input </TD><TD>Global system clock </TD></TR><TR><TD>rst </TD><TD>Input </TD><TD>Global system reset </TD></TR><TR><TD>en </TD><TD>Input </TD><TD>Enable computing </TD></TR><TR><TD>datai[31:0] </TD><TD>Input </TD><TD>Data bus input </TD></TR><TR><TD>datao[31:0] </TD><TD>Output </TD><TD>Data bus output </TD></TR></Table>SPARTAN-3 </P><Sect><P>-5 </P><P>190 </P><P>88 MHz </P><P>SPARTAN-3E </P><P>-4 </P><P>190 </P><P>63 MHz </P><P>VIRTEX </P><P>-6 </P><P>190 </P><P>53 MHz </P><P>VIRTEX-E </P><P>-8 </P><P>190 </P><P>62 MHz </P><P>VIRTEX-II </P><P>-6 </P><P>192 </P><P>147 MHz </P><P>VIRTEX-IIP </P><P>-7 </P><P>192 </P><P>179 MHz </P><P>VIRTEX-4 </P><P>-12 </P><P>192 </P><P>173 MHz </P><P>Core performance in XILINX® devices </P><P>BLOCK DIAGRAM </P></Sect><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_10.jpg"/>datai(31:0)datao(31:0)enrstclkArgumentCheckerMain FPPipelined UnitResultComposer</Figure><Sect><P>Arguments Checker -performs input data analysis against IEEE-754 number standard compliance. The appropriate numbers and information about the input data classes, are given as the results to Main FP Pipelined Unit. </P><P>Main FP Pipelined Unit -performs integer to floating point conversion. Gives the complex information about the results to Result Composer module. Result Composer -performs result rounding function, and data alignment to IEEE-754 standard. </P></Sect><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_11.jpg"/></Figure><P>Copyright© 1999-2011 DCD – Digital Core Design. All Rights Reserved 
+All trademarks mentioned in this document are trademarks of their respective owners 
+</P></Sect><Sect><Sect><H3>CONTACT </H3><P>For any modification or special request, please contact Digital Core Design or local distributors. </P></Sect><Sect><Sect><H4>Headquarters: </H4><P>Wroclawska 94 
+41-902 Bytom, POLAND 
+e-mail: : <Link>info@dcd.pl 
+</Link>tel. : +48 32 282 82 66 
+fax : +48 32 282 74 37 
+</P><P>Distributors: </P><P>Please check: http://dcd.pl/sales/ </P></Sect><Figure><ImageData src="images/fpu_ip_dcd_converter_int2float_img_12.jpg"/></Figure><P>Copyright© 1999-2011 DCD – Digital Core Design. All Rights Reserved 
+All trademarks mentioned in this document are trademarks of their respective owners 
+</P></Sect></Sect></Sect></Part></TaggedPDF-doc>

@@ -1,0 +1,1331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fuzzy Input Data</title>
+<style type="text/css">
+<!--
+@import url("style.css");
+-->
+</style>
+</head>
+<body>
+<table id="box-table-a" summary="Fuzzy Input Data">
+<thead>
+<tr>
+<th scope="col">S.No</th><th scope="col">Bigram</th><th scope="col">Location Vector</th><th scope="col">Signature</th><th scope="col">Signature Weight</th><th scope="col">Tf</th><th scope="col">Idf</th><th scope="col">Tf - Idf Score</th><th scope="col">Is First Letter Capitalized</th><th scope="col">POS</th></tr>
+</thead>
+<tbody>
+<td class="column_1">1</td>
+<td class="column_2">Salva was</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'VBD']</td>
+</tr>
+<td class="column_1">2</td>
+<td class="column_2">was the</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.31806333496276157</td>
+<td class="column_8">0.002672801134140853</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'DT']</td>
+</tr>
+<td class="column_1">3</td>
+<td class="column_2">the friend</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">4</td>
+<td class="column_2">friend of</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.01680672268907563</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.020821547712859437</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">5</td>
+<td class="column_2">of Shishupala</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'NNP']</td>
+</tr>
+<td class="column_1">6</td>
+<td class="column_2">Shishupala and</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'CC']</td>
+</tr>
+<td class="column_1">7</td>
+<td class="column_2">and he</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.414973347970818</td>
+<td class="column_8">0.0034871709913514115</td>
+<td class="column_9">No</td>
+<td class="column_10">['CC', 'PRP']</td>
+</tr>
+<td class="column_1">8</td>
+<td class="column_2">he had</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.184524426592544</td>
+<td class="column_8">0.0015506254335507898</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP', 'VBD']</td>
+</tr>
+<td class="column_1">9</td>
+<td class="column_2">had a</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.4607308385314931</td>
+<td class="column_8">0.0038716877187520427</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'DT']</td>
+</tr>
+<td class="column_1">10</td>
+<td class="column_2">a hatred</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'VBN']</td>
+</tr>
+<td class="column_1">11</td>
+<td class="column_2">hatred for</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'IN']</td>
+</tr>
+<td class="column_1">12</td>
+<td class="column_2">for the</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.09275405323689871</td>
+<td class="column_8">0.0007794458255201573</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">13</td>
+<td class="column_2">the Yadus</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NNP']</td>
+</tr>
+<td class="column_1">14</td>
+<td class="column_2">Yadus especially</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'RB']</td>
+</tr>
+<td class="column_1">15</td>
+<td class="column_2">especially Krishna</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['RB', 'NNP']</td>
+</tr>
+<td class="column_1">16</td>
+<td class="column_2">Krishna who</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'WP']</td>
+</tr>
+<td class="column_1">17</td>
+<td class="column_2">who had</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.5399120845791179</td>
+<td class="column_8">0.004537076341000991</td>
+<td class="column_9">No</td>
+<td class="column_10">['WP', 'VBD']</td>
+</tr>
+<td class="column_1">18</td>
+<td class="column_2">had denied</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'VBN']</td>
+</tr>
+<td class="column_1">19</td>
+<td class="column_2">denied his</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'PRP$']</td>
+</tr>
+<td class="column_1">20</td>
+<td class="column_2">his friend</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP$', 'NN']</td>
+</tr>
+<td class="column_1">21</td>
+<td class="column_2">friend of</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.01680672268907563</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.020821547712859437</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">22</td>
+<td class="column_2">of his</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.07255066714861175</td>
+<td class="column_8">0.0006096694718370735</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'PRP$']</td>
+</tr>
+<td class="column_1">23</td>
+<td class="column_2">his prospective</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP$', 'JJ']</td>
+</tr>
+<td class="column_1">24</td>
+<td class="column_2">prospective bride</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['JJ', 'NN']</td>
+</tr>
+<td class="column_1">25</td>
+<td class="column_2">bride Rukmini</td>
+<td class="column_3">0 0 0</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NNP']</td>
+</tr>
+<td class="column_1">26</td>
+<td class="column_2">He had</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.5399120845791179</td>
+<td class="column_8">0.004537076341000991</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP', 'VBD']</td>
+</tr>
+<td class="column_1">27</td>
+<td class="column_2">had vowed</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'VBN']</td>
+</tr>
+<td class="column_1">28</td>
+<td class="column_2">vowed to</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'TO']</td>
+</tr>
+<td class="column_1">29</td>
+<td class="column_2">to destroy</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['TO', 'VB']</td>
+</tr>
+<td class="column_1">30</td>
+<td class="column_2">destroy the</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'DT']</td>
+</tr>
+<td class="column_1">31</td>
+<td class="column_2">the Yadavas</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NNP']</td>
+</tr>
+<td class="column_1">32</td>
+<td class="column_2">Yadavas and</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'CC']</td>
+</tr>
+<td class="column_1">33</td>
+<td class="column_2">and relieve</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['CC', 'VBP']</td>
+</tr>
+<td class="column_1">34</td>
+<td class="column_2">relieve the</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.0170333392987803</td>
+<td class="column_8">0.008546498649569582</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'DT']</td>
+</tr>
+<td class="column_1">35</td>
+<td class="column_2">the earth</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.5698753079565612</td>
+<td class="column_8">0.004788868134088749</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">36</td>
+<td class="column_2">earth of</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">37</td>
+<td class="column_2">of these</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.0170333392987803</td>
+<td class="column_8">0.008546498649569582</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">38</td>
+<td class="column_2">these undesirable</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'JJ']</td>
+</tr>
+<td class="column_1">39</td>
+<td class="column_2">undesirable people</td>
+<td class="column_3">0 0 1</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['JJ', 'NNS']</td>
+</tr>
+<td class="column_1">40</td>
+<td class="column_2">To carry</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['TO', 'VB']</td>
+</tr>
+<td class="column_1">41</td>
+<td class="column_2">carry out</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">42</td>
+<td class="column_2">out the</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.6020599913279624</td>
+<td class="column_8">0.0050593276582181716</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">43</td>
+<td class="column_2">the resolve,</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">44</td>
+<td class="column_2">resolve, Salva</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', ',', 'NNP']</td>
+</tr>
+<td class="column_1">45</td>
+<td class="column_2">Salva began</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'VBD']</td>
+</tr>
+<td class="column_1">46</td>
+<td class="column_2">began to</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.4607308385314931</td>
+<td class="column_8">0.0038716877187520427</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'TO']</td>
+</tr>
+<td class="column_1">47</td>
+<td class="column_2">to worship</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['TO', 'NN']</td>
+</tr>
+<td class="column_1">48</td>
+<td class="column_2">worship Shiva</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NNP']</td>
+</tr>
+<td class="column_1">49</td>
+<td class="column_2">Shiva living</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'NN']</td>
+</tr>
+<td class="column_1">50</td>
+<td class="column_2">living on</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBG', 'IN']</td>
+</tr>
+<td class="column_1">51</td>
+<td class="column_2">on a</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.5399120845791179</td>
+<td class="column_8">0.004537076341000991</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">52</td>
+<td class="column_2">a handful</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">53</td>
+<td class="column_2">handful of</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">54</td>
+<td class="column_2">of dust</td>
+<td class="column_3">0 0 2</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'JJ']</td>
+</tr>
+<td class="column_1">55</td>
+<td class="column_2">After nearly</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'RB']</td>
+</tr>
+<td class="column_1">56</td>
+<td class="column_2">nearly a</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['RB', 'DT']</td>
+</tr>
+<td class="column_1">57</td>
+<td class="column_2">a year,</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">58</td>
+<td class="column_2">year, Shiva</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', ',', 'NNP']</td>
+</tr>
+<td class="column_1">59</td>
+<td class="column_2">Shiva appeared</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'VBD']</td>
+</tr>
+<td class="column_1">60</td>
+<td class="column_2">appeared with</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'IN']</td>
+</tr>
+<td class="column_1">61</td>
+<td class="column_2">with the</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.11394335230683679</td>
+<td class="column_8">0.0009575071622423259</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">62</td>
+<td class="column_2">the offer</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">63</td>
+<td class="column_2">offer of</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">64</td>
+<td class="column_2">of a</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.10321948691506368</td>
+<td class="column_8">0.0008673906463450728</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">65</td>
+<td class="column_2">a boon</td>
+<td class="column_3">0 0 3</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.6746106584765741</td>
+<td class="column_8">0.005668997130055244</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">66</td>
+<td class="column_2">Salva asked</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'VBD']</td>
+</tr>
+<td class="column_1">67</td>
+<td class="column_2">asked for</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.8709053036205423</td>
+<td class="column_8">0.0073185319631978345</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'IN']</td>
+</tr>
+<td class="column_1">68</td>
+<td class="column_2">for a</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.2846395794758118</td>
+<td class="column_8">0.002391929239292536</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">69</td>
+<td class="column_2">a chariot</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">70</td>
+<td class="column_2">chariot that</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">71</td>
+<td class="column_2">that could</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'MD']</td>
+</tr>
+<td class="column_1">72</td>
+<td class="column_2">could traverse</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['MD', 'VB']</td>
+</tr>
+<td class="column_1">73</td>
+<td class="column_2">traverse the</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'DT']</td>
+</tr>
+<td class="column_1">74</td>
+<td class="column_2">the entire</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.4372497426819702</td>
+<td class="column_8">0.0036743675855627745</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'JJ']</td>
+</tr>
+<td class="column_1">75</td>
+<td class="column_2">entire universe</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NN']</td>
+</tr>
+<td class="column_1">76</td>
+<td class="column_2">universe unhindered,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NN']</td>
+</tr>
+<td class="column_1">77</td>
+<td class="column_2">unhindered, strike</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', ',', 'NN']</td>
+</tr>
+<td class="column_1">78</td>
+<td class="column_2">strike terror</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NN']</td>
+</tr>
+<td class="column_1">79</td>
+<td class="column_2">terror in</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'IN']</td>
+</tr>
+<td class="column_1">80</td>
+<td class="column_2">in the</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.03476210625921191</td>
+<td class="column_8">0.0002921185399933774</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">81</td>
+<td class="column_2">the hearts</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NNS']</td>
+</tr>
+<td class="column_1">82</td>
+<td class="column_2">hearts of</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.0170333392987803</td>
+<td class="column_8">0.008546498649569582</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', 'IN']</td>
+</tr>
+<td class="column_1">83</td>
+<td class="column_2">of the</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.01680672268907563</td>
+<td class="column_7">0.008433167536862764</td>
+<td class="column_8">0.00014173390818256746</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">84</td>
+<td class="column_2">the Yadavas,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">85</td>
+<td class="column_2">Yadavas, and</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', ',', 'CC']</td>
+</tr>
+<td class="column_1">86</td>
+<td class="column_2">and also</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.6020599913279624</td>
+<td class="column_8">0.0050593276582181716</td>
+<td class="column_9">No</td>
+<td class="column_10">['CC', 'RB']</td>
+</tr>
+<td class="column_1">87</td>
+<td class="column_2">also help</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['RB', 'VBP']</td>
+</tr>
+<td class="column_1">88</td>
+<td class="column_2">help him</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.9378520932511555</td>
+<td class="column_8">0.007881110027320634</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'PRP']</td>
+</tr>
+<td class="column_1">89</td>
+<td class="column_2">him from</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.6020599913279624</td>
+<td class="column_8">0.0050593276582181716</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP', 'IN']</td>
+</tr>
+<td class="column_1">90</td>
+<td class="column_2">from succumbing</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'VBG']</td>
+</tr>
+<td class="column_1">91</td>
+<td class="column_2">succumbing to</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBG', 'TO']</td>
+</tr>
+<td class="column_1">92</td>
+<td class="column_2">to the</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.01703333929878037</td>
+<td class="column_8">0.0001431373050317678</td>
+<td class="column_9">No</td>
+<td class="column_10">['TO', 'DT']</td>
+</tr>
+<td class="column_1">93</td>
+<td class="column_2">the attacks</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NNS']</td>
+</tr>
+<td class="column_1">94</td>
+<td class="column_2">attacks of</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', 'IN']</td>
+</tr>
+<td class="column_1">95</td>
+<td class="column_2">of the</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.01680672268907563</td>
+<td class="column_7">0.008433167536862764</td>
+<td class="column_8">0.00014173390818256746</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'DT']</td>
+</tr>
+<td class="column_1">96</td>
+<td class="column_2">the celestials,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">97</td>
+<td class="column_2">celestials, asuras,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', ',', 'NNP']</td>
+</tr>
+<td class="column_1">98</td>
+<td class="column_2">asuras, mortals,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', ',', 'NNP']</td>
+</tr>
+<td class="column_1">99</td>
+<td class="column_2">mortals, gandharvas,</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', ',', 'NNP']</td>
+</tr>
+<td class="column_1">100</td>
+<td class="column_2">gandharvas, reptiles</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', ',', 'NNS']</td>
+</tr>
+<td class="column_1">101</td>
+<td class="column_2">reptiles or</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNS', 'CC']</td>
+</tr>
+<td class="column_1">102</td>
+<td class="column_2">or rakshasas</td>
+<td class="column_3">0 0 4</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['CC', 'VBD']</td>
+</tr>
+<td class="column_1">103</td>
+<td class="column_2">Ordered by</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'IN']</td>
+</tr>
+<td class="column_1">104</td>
+<td class="column_2">by Shiva,</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['IN', 'JJ']</td>
+</tr>
+<td class="column_1">105</td>
+<td class="column_2">Shiva, the</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', ',', 'DT']</td>
+</tr>
+<td class="column_1">106</td>
+<td class="column_2">the asura</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.6746106584765741</td>
+<td class="column_8">0.005668997130055244</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">107</td>
+<td class="column_2">asura architect</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NN']</td>
+</tr>
+<td class="column_1">108</td>
+<td class="column_2">architect Maya</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'NNP']</td>
+</tr>
+<td class="column_1">109</td>
+<td class="column_2">Maya created</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', 'VBD']</td>
+</tr>
+<td class="column_1">110</td>
+<td class="column_2">created an</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'DT']</td>
+</tr>
+<td class="column_1">111</td>
+<td class="column_2">an iron</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['DT', 'NN']</td>
+</tr>
+<td class="column_1">112</td>
+<td class="column_2">iron chariot</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'VBD']</td>
+</tr>
+<td class="column_1">113</td>
+<td class="column_2">chariot named</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NN', 'VBD']</td>
+</tr>
+<td class="column_1">114</td>
+<td class="column_2">named Soubha,</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'JJ']</td>
+</tr>
+<td class="column_1">115</td>
+<td class="column_2">Soubha, and</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['NNP', ',', 'CC']</td>
+</tr>
+<td class="column_1">116</td>
+<td class="column_2">and gave</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.2388820889151366</td>
+<td class="column_8">0.010410773856429719</td>
+<td class="column_9">No</td>
+<td class="column_10">['CC', 'VBD']</td>
+</tr>
+<td class="column_1">117</td>
+<td class="column_2">gave it</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.1139433523068367</td>
+<td class="column_8">0.00936086850678014</td>
+<td class="column_9">No</td>
+<td class="column_10">['VBD', 'PRP']</td>
+</tr>
+<td class="column_1">118</td>
+<td class="column_2">it to</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">0.5399120845791179</td>
+<td class="column_8">0.004537076341000991</td>
+<td class="column_9">No</td>
+<td class="column_10">['PRP', 'TO']</td>
+</tr>
+<td class="column_1">119</td>
+<td class="column_2">to Salva.</td>
+<td class="column_3">0 0 5</td>
+<td class="column_4">['query', 'body', 'statement', 'word']</td>
+<td class="column_5">{}</td>
+<td class="column_6">0.008403361344537815</td>
+<td class="column_7">1.414973347970818</td>
+<td class="column_8">0.011890532335889227</td>
+<td class="column_9">No</td>
+<td class="column_10">['TO', 'NNP', '.']</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

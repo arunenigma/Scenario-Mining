@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- Created from PDF via Acrobat SaveAsXML --><!-- Mapping Table version: 28-February-2003 --><TaggedPDF-doc><?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/09/27-13:37:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>xml</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Rudolf Usselmann</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">FPU.fm</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2000-09-16T12:23:56</xmp:CreateDate>
+         <xmp:CreatorTool>FrameMaker 5.5</xmp:CreatorTool>
+         <xmp:ModifyDate>2000-09-16T12:23:58+07:00</xmp:ModifyDate>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>Acrobat Distiller 4.0 for Macintosh</pdf:Producer>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?><?xpacket end='r'?><bookmark-tree><bookmark title="1. Introduction"><destination structID="LinkTarget_290"/><bookmark title="1.1. The FPU supports the following operations:"><destination structID="LinkTarget_290"/></bookmark><bookmark title="1.2. The FPU supports the following Rounding Modes:"><destination structID="LinkTarget_291"/></bookmark><bookmark title="1.3. General Operation"><destination structID="LinkTarget_292"/></bookmark></bookmark><bookmark title="2. FPU Architecture"><destination structID="LinkTarget_293"/></bookmark><bookmark title="3. Interface"><destination structID="LinkTarget_294"/></bookmark><bookmark title="4. Floating Point Comparator"><destination structID="LinkTarget_295"/><bookmark title="4.1. FCMP Interface"><destination structID="LinkTarget_295"/></bookmark></bookmark></bookmark-tree><Part><H1>Open Floating Point Unit 
+</H1><P>The Free IP Cores Projects www.opencores.org </P><P>Author: Rudolf Usselmann rudi@asics.ws www.asics.ws </P><Figure><ImageData src="images/fpu_ip_opencores_round_usselmann_2000sept16_img_0.jpg"/></Figure><P>Summary: 
+This documents describes a free single precision floating point unit. This 
+floating point unit can perform add, subtract, multiply, divide, integer  to 
+floating point and floating point to integer conversion. 
+</P><P>All source ﬁles and documents may be used and distributed without restriction provided that this copyright statement is not removed from the ﬁle and that any derivative work contains the original copyright notice and the associated disclaimer. </P><P>ALL SOURCE CODE AND DOCUMENTATION IS PROVIDED “AS IS”, WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. </P><Sect><H4>Copyright 2000 Rudolf Usselmann </H4></Sect><Sect><H2>Change Log 
+</H2><P>13/9/2000 RU Initial release of FPU </P><P>15/9/2000 RU Added integer to ﬂoating point and vise versa conversion </P><P>16/9/2000 RU Added ﬂoating point comparison (fcmp) Unit </P></Sect><Sect><H2>To Do </H2><P>Things that still need to be done: </P><P>- Improve performance by prediction leading zeros in post normalization unit </P><P id="LinkTarget_290">1. Introduction </P><P>This document describes a single precision floating point unit. The floating point unit is fully IEEE 754 compliant. </P><P>1.1. The FPU supports the following operations: </P><Table><TR><TD id="LinkTarget_291">fpu_op </TD><TD>Operation </TD></TR><TR><TD>0 </TD><TD>Add </TD></TR><TR><TD>1 </TD><TD>Subtract </TD></TR><TR><TD>2 </TD><TD>Multiply </TD></TR><TR><TD>3 </TD><TD>Divide </TD></TR><TR><TD>4 </TD><TD>Int to float conversion </TD></TR><TR><TD>5 </TD><TD>Float to int conversion </TD></TR><TR><TD>6 </TD><TD>Remainder (Future Function) </TD></TR><TR><TD id="LinkTarget_292">7 </TD><TD>RESERVED </TD></TR></Table><P>1.2. The FPU supports the following Rounding Modes: rmode Rounding Mode 0 Round to nearest even 1 Round to Zero </P><P>2 Round to +INF (UP) 3 Round to -INF (DOWN) </P><Sect><H4>1.3. General Operation </H4><P>The FPU can perform a floating point operation every cycle. It will latch the operation type, rounding mode and operands and deliver a result four cycles later. </P><P>The FPU will never generate a SNAN output. The SNAN output is asserted when one of the operands was a signaling NAN (output will be a quiet NAN). </P><P>The QNAN output is asserted whenever the OUTUT of the FPU is NAN (always a quiet NAN). </P><P>When performing a floating point to integer conversion, the output (representing an integer) can take on forms of a NAN or INF, which are perfectly legal integers. In those cases the inf and nan outputs will not be asserted. However, if the input is a NAN, the proper nan output will be asserted. </P><P id="LinkTarget_293">2. FPU Architecture </P><P>This is a simple single precision floating point unit. Two pre normalization units adjust the fractions (mantissa) and exponents. One does it for add and subtract operation, the other for multiply and divide operations. The Add/Sub, Mul, and Div, blocks, perform the actual addition subtraction, multiplication and division respectively. A shared post normalization block, normalizes the fraction, the rounds it. The final result is packed in to a valid single precision floating point format result. </P><P>Below diagram illustrates the internal of this implementation (pipeline not shown). </P><P>rmode opa opb fpu_op </P><Figure><ImageData src="images/fpu_ip_opencores_round_usselmann_2000sept16_img_1.jpg"/>Pre Normalize Block for Add/Subtract Pre Normalize Block for Mul/Div Add/Sub Multiply Divide Post Normalize and Round Unit Exceptions Unit result zero snan inf divbyzero </Figure><P>qnan ine </P><P id="LinkTarget_294">3. Interface </P><P>This table lists all inputs and outputs of the FPU and provides a general description of their functions. </P><P>Table 1: </P><Table><TR><TD>Signal Name </TD><TD>With </TD><TD>Direction </TD><TD>Description </TD></TR><TR><TD>clk </TD><TD>1 </TD><TD>Input </TD><TD>System Clock </TD></TR><TR><TD>rmode </TD><TD>2 </TD><TD>Input </TD><TD>Rounding Mode </TD></TR><TR><TD>fpu_op </TD><TD>3 </TD><TD>Input </TD><TD>Floating Point Operation Select </TD></TR><TR><TD>opa, opb </TD><TD>32 </TD><TD>Input </TD><TD>Operand a and B </TD></TR><TR><TD>out </TD><TD>32 </TD><TD>Output </TD><TD>Result Output </TD></TR><TR><TD>snan </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when either operand is a SNAN </TD></TR><TR><TD>qnan </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when output is a QNAN </TD></TR><TR><TD>inf </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when output is a INF </TD></TR><TR><TD>ine </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when the Result is Inexact </TD></TR><TR><TD>overflow </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when a overflow occurs </TD></TR><TR><TD>underflow </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when a Underflow occurs </TD></TR><TR><TD>div_by_zero </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when the fpu_op is set to divide and opb is zero </TD></TR><TR><TD>zero </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when the output is a numeric zero </TD></TR></Table><P id="LinkTarget_295">4. Floating Point Comparator 
+The floating point comparator is a IEEE 754 single precision floating point comparator. 
+</P><P>This implementation is purely combinatorial, the designer should insert registers as he/she sees fit. </P></Sect><Sect><H4>4.1. FCMP Interface </H4><P>This table lists all inputs and outputs of the FP compare and provides a general description of their functions. </P><P>Table 2: </P><Table><TR><TD>Signal Name </TD><TD>With </TD><TD>Direction </TD><TD>Description </TD></TR><TR><TD>opa, opb </TD><TD>32 </TD><TD>Input </TD><TD>Operand a and B </TD></TR><TR><TD>unordered </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opa or opb is a NAN </TD></TR><TR><TD>altb </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opa is larger then opb </TD></TR><TR><TD>blta </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opb is larger then opa </TD></TR><TR><TD>aeqb </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opa is equal to opb </TD></TR><TR><TD>inf </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opa or opb is a INF </TD></TR><TR><TD>zero </TD><TD>1 </TD><TD>Output </TD><TD>Asserted when opa is a numeric zero </TD></TR></Table></Sect></Sect></Part></TaggedPDF-doc>

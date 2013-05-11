@@ -1,0 +1,121 @@
+S.No,Word,Location Vector,Signature,Signature Weight,Tf,Idf,Tf - Idf Score,English Dictionary Match,Number Match,Abbreviation Match,Symbol Match,Repetitive Word
+1,Salva,0 0 0 0,query body statement word,{},0.025,1.2388820889151366,0.030972052222878417,No,No,No,No,No
+2,was,0 0 0 1,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+3,the,0 0 0 2,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+4,friend,0 0 0 3,query body statement word,{},0.016666666666666666,0.8129133566428556,0.013548555944047592,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+5,of,0 0 0 4,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+6,Shishupala,0 0 0 5,query body statement word,{},0.008333333333333333,1.0170333392987803,0.008475277827489835,No,No,No,No,No
+7,and,0 0 0 6,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+8,he,0 0 0 7,query body statement word,{},0.008333333333333333,0.008433167536862764,7.027639614052303e-05,Yes (NTLK Stopword),No,No,No,No
+9,had,0 0 0 8,query body statement word,{},0.025,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+10,hatred,0 0 0 10,query body statement word,{},0.008333333333333333,0.6368220975871743,0.005306850813226452,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+11,for,0 0 0 11,query body statement word,{},0.016666666666666666,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+12,the,0 0 0 12,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+13,Yadus,0 0 0 13,query body statement word,{},0.008333333333333333,0.8709053036205423,0.007257544196837853,No,No,No,No,No
+14,especially,0 0 0 14,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+15,Krishna,0 0 0 15,query body statement word,{},0.008333333333333333,0.17193529928452353,0.0014327941607043628,No,No,No,No,No
+16,who,0 0 0 16,query body statement word,{},0.008333333333333333,0.07255066714861175,0.0006045888929050979,Yes (NTLK Stopword),No,No,No,No
+17,had,0 0 0 17,query body statement word,{},0.025,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+18,denied,0 0 0 18,query body statement word,{},0.008333333333333333,0.8709053036205423,0.007257544196837853,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+19,his,0 0 0 19,query body statement word,{},0.016666666666666666,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+20,friend,0 0 0 20,query body statement word,{},0.016666666666666666,0.8129133566428556,0.013548555944047592,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+21,of,0 0 0 21,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+22,his,0 0 0 22,query body statement word,{},0.016666666666666666,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+23,prospective,0 0 0 23,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+24,bride,0 0 0 24,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+25,Rukmini,0 0 0 25,query body statement word,{},0.008333333333333333,0.9378520932511555,0.007815434110426296,No,No,No,No,No
+26,He,0 0 1 0,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+27,had,0 0 1 1,query body statement word,{},0.025,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+28,vowed,0 0 1 2,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+29,to,0 0 1 3,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+30,destroy,0 0 1 4,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+31,the,0 0 1 5,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+32,Yadavas,0 0 1 6,query body statement word,{},0.016666666666666666,0.8709053036205423,0.014515088393675706,No,No,No,No,No
+33,and,0 0 1 7,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+34,relieve,0 0 1 8,query body statement word,{},0.008333333333333333,0.9378520932511555,0.007815434110426296,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+35,the,0 0 1 9,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+36,earth,0 0 1 10,query body statement word,{},0.008333333333333333,0.3357921019231931,0.002798267516026609,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+37,of,0 0 1 11,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+38,these,0 0 1 12,query body statement word,{},0.008333333333333333,0.4607308385314931,0.0038394236544291092,Yes (NTLK Stopword),No,No,No,No
+39,undesirable,0 0 1 13,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+40,people,0 0 1 14,query body statement word,{},0.008333333333333333,0.12493873660829993,0.0010411561384024994,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+41,To,0 0 2 0,query body statement word,{},0.008333333333333333,0.3010299956639812,0.0025085832971998433,Yes (NTLK Stopword),No,No,No,No
+42,carry,0 0 2 1,query body statement word,{},0.008333333333333333,0.6020599913279624,0.005017166594399687,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+43,out,0 0 2 2,query body statement word,{},0.008333333333333333,0.04390548569908171,0.00036587904749234756,Yes (NTLK Stopword),No,No,No,No
+44,the,0 0 2 3,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+45,resolve,0 0 2 4,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+46,Salva,0 0 2 5,query body statement word,{},0.025,1.2388820889151366,0.030972052222878417,No,No,No,No,No
+47,began,0 0 2 6,query body statement word,{},0.008333333333333333,0.37358066281259295,0.0031131721901049413,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+48,to,0 0 2 7,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+49,worship,0 0 2 8,query body statement word,{},0.008333333333333333,0.7160033436347992,0.005966694530289993,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+50,Shiva,0 0 2 9,query body statement word,{},0.025,0.414973347970818,0.01037433369927045,No,No,No,No,No
+51,living,0 0 2 10,query body statement word,{},0.008333333333333333,0.5399120845791179,0.004499267371492649,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+52,on,0 0 2 11,query body statement word,{},0.008333333333333333,0.01703333929878037,0.0001419444941565031,Yes (NTLK Stopword),No,No,No,No
+53,handful,0 0 2 13,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+54,of,0 0 2 14,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+55,dust,0 0 2 15,query body statement word,{},0.008333333333333333,0.8709053036205423,0.007257544196837853,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+56,After,0 0 3 0,query body statement word,{},0.008333333333333333,0.414973347970818,0.00345811123309015,Yes (NTLK Stopword),No,No,No,No
+57,nearly,0 0 3 1,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+58,year,0 0 3 3,query body statement word,{},0.008333333333333333,0.8129133566428556,0.006774277972023796,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+59,Shiva,0 0 3 4,query body statement word,{},0.025,0.414973347970818,0.01037433369927045,No,No,No,No,No
+60,appeared,0 0 3 5,query body statement word,{},0.008333333333333333,0.3937840489008799,0.003281533740840666,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+61,with,0 0 3 6,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+62,the,0 0 3 7,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+63,offer,0 0 3 8,query body statement word,{},0.008333333333333333,0.4855544222565252,0.00404628685213771,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+64,of,0 0 3 9,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+65,boon,0 0 3 11,query body statement word,{},0.008333333333333333,0.6368220975871743,0.005306850813226452,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+66,Salva,0 0 4 0,query body statement word,{},0.025,1.2388820889151366,0.030972052222878417,No,No,No,No,No
+67,asked,0 0 4 1,query body statement word,{},0.008333333333333333,0.3357921019231931,0.002798267516026609,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+68,for,0 0 4 2,query body statement word,{},0.016666666666666666,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+69,chariot,0 0 4 4,query body statement word,{},0.016666666666666666,0.5698753079565612,0.00949792179927602,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+70,that,0 0 4 5,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+71,could,0 0 4 6,query body statement word,{},0.008333333333333333,0.12493873660829993,0.0010411561384024994,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+72,traverse,0 0 4 7,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+73,the,0 0 4 8,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+74,entire,0 0 4 9,query body statement word,{},0.008333333333333333,0.3542755076172062,0.0029522958968100517,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+75,universe,0 0 4 10,query body statement word,{},0.008333333333333333,0.8129133566428556,0.006774277972023796,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+76,unhindered,0 0 4 11,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+77,strike,0 0 4 12,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+78,terror,0 0 4 13,query body statement word,{},0.008333333333333333,1.0170333392987803,0.008475277827489835,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+79,in,0 0 4 14,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+80,the,0 0 4 15,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+81,hearts,0 0 4 16,query body statement word,{},0.008333333333333333,0.6746106584765741,0.005621755487304784,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+82,of,0 0 4 17,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+83,the,0 0 4 18,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+84,Yadavas,0 0 4 19,query body statement word,{},0.016666666666666666,0.8709053036205423,0.014515088393675706,No,No,No,No,No
+85,and,0 0 4 20,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+86,also,0 0 4 21,query body statement word,{},0.008333333333333333,0.08253488805521261,0.0006877907337934384,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+87,help,0 0 4 22,query body statement word,{},0.008333333333333333,0.3010299956639812,0.0025085832971998433,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+88,him,0 0 4 23,query body statement word,{},0.008333333333333333,0.008433167536862764,7.027639614052303e-05,Yes (NTLK Stopword),No,No,No,No
+89,from,0 0 4 24,query body statement word,{},0.008333333333333333,0.008433167536862764,7.027639614052303e-05,Yes (NTLK Stopword),No,No,No,No
+90,succumbing,0 0 4 25,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+91,to,0 0 4 26,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+92,the,0 0 4 27,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+93,attacks,0 0 4 28,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+94,of,0 0 4 29,query body statement word,{},0.058333333333333334,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+95,the,0 0 4 30,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+96,celestials,0 0 4 31,query body statement word,{},0.008333333333333333,0.8129133566428556,0.006774277972023796,"Yes (en_US, en_AU)",No,No,No,No
+97,asuras,0 0 4 32,query body statement word,{},0.008333333333333333,0.5118833609788743,0.004265694674823952,No,No,No,No,No
+98,mortals,0 0 4 33,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+99,gandharvas,0 0 4 34,query body statement word,{},0.008333333333333333,1.0170333392987803,0.008475277827489835,No,No,No,No,No
+100,reptiles,0 0 4 35,query body statement word,{},0.008333333333333333,1.2388820889151366,0.010324017407626139,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+101,or,0 0 4 36,query body statement word,{},0.008333333333333333,0.2246416498005265,0.0018720137483377208,Yes (NTLK Stopword),No,No,No,No
+102,rakshasas,0 0 4 37,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,No,No,No,No,No
+103,Ordered,0 0 5 0,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+104,by,0 0 5 1,query body statement word,{},0.008333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+105,Shiva,0 0 5 2,query body statement word,{},0.025,0.414973347970818,0.01037433369927045,No,No,No,No,No
+106,the,0 0 5 3,query body statement word,{},0.1,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+107,asura,0 0 5 4,query body statement word,{},0.008333333333333333,0.6020599913279624,0.005017166594399687,No,No,No,No,No
+108,architect,0 0 5 5,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+109,Maya,0 0 5 6,query body statement word,{},0.008333333333333333,1.1139433523068367,0.00928286126922364,No,No,No,No,No
+110,created,0 0 5 7,query body statement word,{},0.008333333333333333,0.6368220975871743,0.005306850813226452,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+111,an,0 0 5 8,query body statement word,{},0.008333333333333333,0.025807263606285526,0.00021506053005237937,Yes (NTLK Stopword),No,No,No,No
+112,iron,0 0 5 9,query body statement word,{},0.008333333333333333,0.9378520932511555,0.007815434110426296,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+113,chariot,0 0 5 10,query body statement word,{},0.016666666666666666,0.5698753079565612,0.00949792179927602,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+114,named,0 0 5 11,query body statement word,{},0.008333333333333333,0.2536053457358431,0.002113377881132026,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+115,Soubha,0 0 5 12,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,No,No,No,No,No
+116,and,0 0 5 13,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+117,gave,0 0 5 14,query body statement word,{},0.008333333333333333,0.26884531229257996,0.002240377602438166,"Yes (en_US, en_GB, en_AU)",No,No,No,No
+118,it,0 0 5 15,query body statement word,{},0.008333333333333333,0.03476210625921191,0.0002896842188267659,Yes (NTLK Stopword),No,No,No,No
+119,to,0 0 5 16,query body statement word,{},0.03333333333333333,0.0,0.0,Yes (NTLK Stopword),No,No,No,Yes
+120,Salva.,0 0 5 17,query body statement word,{},0.008333333333333333,1.414973347970818,0.011791444566423483,No,No,No,No,No
